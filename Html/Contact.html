@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+  <body>
+    <a href="index.html">Home</a>
+    <h1>Welcome to my contact page</h1>
+    <p>If you have any query :</p>
+    <p>Please fill this form</p>
+    <!-- contact form #start-->
+    <form action="contact_form.html" method="post">
+      <!-- Name field -->
+      <div>
+        <fieldset>
+          <legend>Name field</legend>
+          <label for="name">Name</label>
+          <input
+            class="input_text"
+            name="username"
+            id="name"
+            type="text"
+            placeholder="Enter name here"
+          />
+        </fieldset>
+      </div>
+
+      <!-- email field -->
+      <div>
+        <fieldset>
+          <legend>Email field</legend>
+          <label for="email">Email</label>
+          <input
+            class="input_text"
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Enter email here"
+          />
+        </fieldset>
+      </div>
+
+      <!-- password field -->
+      <div>
+        <fieldset>
+          <legend>Password field</legend>
+          <label for="password">Password</label>
+          <input
+            name="password"
+            id="password"
+            type="password"
+            placeholder="Enter password here"
+          />
+        </fieldset>
+      </div>
+
+      <!-- gender field -->
+      <div>
+        <fieldset>
+          <legend>Gender field</legend>
+          Gender:
+          <input id="male" type="radio" name="gender" />
+          <label for="male">Male</label>
+
+          <input id="female" type="radio" name="gender" />
+          <label for="female">Female</label>
+        </fieldset>
+      </div>
+
+      <!-- Date of birth -->
+      <div>
+        <fieldset>
+          <legend>DOB field</legend>
+          <label for="dob">DOB</label>
+          <input type="date" placeholder="Enter the dob" />
+        </fieldset>
+      </div>
+
+      <!-- Hobbies -->
+      <div>
+        <fieldset>
+          <legend>Hobbies field</legend>
+          Hobbies :
+          <input id="playing_cricket" type="checkbox" />
+          <label for="playing_cricket">Playing Cricket</label>
+
+          <input id="reading_book" type="checkbox" />
+          <label for="reading_book">Reading Book</label>
+
+          <input id="coding" type="checkbox" />
+          <label for="coding">Coding</label>
+        </fieldset>
+      </div>
+
+      <!-- file upload   -->
+      <div>
+        <fieldset>
+          <legend>Upload field</legend>
+          <label for="file_upload">Upload file if any:</label>
+          <input type="file" />
+        </fieldset>
+      </div>
+
+      <!-- Color chooser -->
+      <div>
+        <fieldset>
+          <legend>Color field</legend>
+          <label for="color">Choose your favorite color:</label>
+          <input type="color" />
+        </fieldset>
+      </div>
+
+      <!-- address -->
+      <div>
+        <fieldset>
+          <legend>Address field</legend>
+          <label for="address">Address</label>
+          <textarea
+            name="address"
+            id="address"
+            placeholder="Enter address here"
+          ></textarea>
+        </fieldset>
+      </div>
+
+      <!-- Programming language -->
+      <div>
+        <fieldset>
+          <legend>Language field</legend>
+          <label for="language">Select Language</label>
+          <select name="pref_lang" id="language">
+            <option disabled selected>---Enter your language---</option>
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+            <option value="java">Java</option>
+            <option value="pythan">Pythan</option>
+          </select>
+        </fieldset>
+      </div>
+
+      <!-- buttons -->
+      <div>
+        <button type="submit">Submit this form</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
