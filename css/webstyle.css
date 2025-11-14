@@ -31,6 +31,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    
 }
 
 /* navbar */
@@ -75,6 +76,7 @@ body {
 
 .main_right_link {
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 
@@ -88,5 +90,23 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 10px; 
+}
+
+/* End Navabr */
+
+/* hero section */
+
+.hero_section {
+    height: 400px;
+    background-color: var(--primary-color);
+    color: var(--dark-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_content {
+    border: 1px solid white;
+    height: fit-content;
 }
