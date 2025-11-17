@@ -72,6 +72,7 @@ body {
     border-radius: var(--radius);
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .main_right_link {
@@ -98,7 +99,7 @@ body {
 /* hero section */
 
 .hero_section {
-    height: 400px;
+    height: 600px;
     background-color: var(--primary-color);
     color: var(--dark-text);
     display: flex;
@@ -107,6 +108,7 @@ body {
 }
 
 .hero_content {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     height: fit-content;
+    text-align: center;
 }
