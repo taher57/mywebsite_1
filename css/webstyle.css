@@ -122,19 +122,19 @@ body {
 /* Services section */
 
 .services_section {
-    padding: 60px 20px;
+    padding: 60px 20px 20px 20px;
     background-color: var(--secondary-color);
+    border-bottom: 1px solid #ddd;
 }
 .services_section , h2, p {
     text-align: center;
-    margin-bottom: 20px;
 }
 .services_container {
     display: flex;
     gap: 20px;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 20px;
 }
 
 .service_item {
@@ -144,4 +144,35 @@ body {
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     text-align: center;
+}
+
+/* End Services section */
+
+/* Experience Section */
+
+.experience_section {
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.experience_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.experience_item {
+    background-color: var(--dark-text);
+    color: var(--text);
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.experience_item li {
+    text-align: left;
 }
