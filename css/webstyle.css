@@ -106,11 +106,42 @@ body {
     justify-content: center;
     align-items: center;
     background-image: url("../images/pexels-markusspiske-6190327.jpg");
-    background-size: 120%;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .hero_content {
     /* border: 1px solid white; */
     height: fit-content;
+    text-align: center;
+}
+
+/* End Hero section */
+
+/* Services section */
+
+.services_section {
+    padding: 60px 20px;
+    background-color: var(--secondary-color);
+}
+.services_section , h2, p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.services_container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.service_item {
+    background-color: var(--dark-text);
+    color: var(--text);
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
     text-align: center;
 }
