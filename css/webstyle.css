@@ -105,6 +105,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("../images/pexels-markusspiske-6190327.jpg");
+    background-size: 120%;
 }
 
 .hero_content {
