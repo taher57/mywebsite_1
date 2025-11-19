@@ -154,6 +154,7 @@ body {
     padding: 10px 20px;
     background-color: var(--secondary-color);
     text-align: center;
+    border-bottom: 1px solid #ddd;
 }
 
 .experience_container {
@@ -176,3 +177,6 @@ body {
 .experience_item li {
     text-align: left;
 }
+
+/* End Experience section */
+
