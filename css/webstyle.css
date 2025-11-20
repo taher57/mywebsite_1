@@ -44,6 +44,8 @@ body {
     padding: 5px 20px;
     background-color: var(--primary-color);
     color: var(--dark-text);
+    position: fixed;
+    width: 100%;
 }
 
 .navbar .brand_name {
