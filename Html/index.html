@@ -1,203 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taher Developer | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Taher Developer | Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
+  <body class="bg-gray-50 text-white font-sans">
+    <!-- navbar  -->
 
-<body class="bg-gray-50 text-white font-sans">
-  <!-- navbar  -->
-
-  <nav class="flex justify-between items-center bg-gradient-to-r from-purple-600 to-sky-300 shadow-sm px-8 py-4 fixed w-full top-0 z-10">
-    <!-- brand name -->
-    <div class="flex items-center gap-3">
-      <img src="..//images/logo.png" class="w-10 h-10 rounded-full" alt="logo">
-      <span class="text-xl font-bold text-white">Taher Developer</span>
-    </div>
-
-    <!-- menu links -->
-    <div class="font-bold spcace-x-6 hidden md:flex gap-3">
-      <a href="#" class="hover:text-indigo-600">Home</a>
-      <a href="#about" class="hover:text-indigo-600">About</a>
-      <a href="#portfolio" class="hover:text-indigo-600">Portfolio</a>
-      <a href="#services" class="hover:text-indigo-600">Services</a>
-      <a href="#contact" class="hover:text-indigo-600">Contact</a>
-    </div>
-
-    <!-- buttons -->
-    <div class="spcace-x-3">
-      <button
-        class="px-4 py-2 text-gray-700 border border-indigo-600 bg-white rounded-full hover:bg-indigo-700 hover:text-white transition">
-        Login
-      </button>
-
-      <button class="px-4 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition">Signup
-      </button>
-    </div>
-
-  </nav>
-
-  <!-- hero section -->
-
-  <section
-    class="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-stone-600 to-stone-400 text-teal-300 text-center px-6">
-
-    <h1 class="text-4xl md:text-6xl font-bold mb-4">
-      Welcome to My Creative world🌍
-    </h1>
-    <p class="max-w-2xl mb-6 text-lg opacity-90">
-      Your gateway to web development excellence.
-    </p>
-    <a href="#portfolio" class="bg-white text-gray-700
-      px-6 py-3 mb-6 rounded-full font-semibold hover:bg-gray-200 transition">
-      View My Work
-    </a>
-
-  </section>
-
-  <!-- End of Hero Section -->
-
-  <!-- About Section -->
-
-  <section class="py-20 bg-sky-200 px-6 md:px-16" id="about">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-
-      <img src="..//images/logo.png" alt="logo"
-        class="rounded-2xl max-h-40 shadow-lg w-auto mx-auto hover:scale-105 transition-transform">
-      <div>
-        <h2 class="text-3xl font-bold mb-4 text-indigo-700">
-          About Me
-        </h2>
-        <p class="text-gray-600 mb-6 leading-relaxed">
-          Hi, I’m Taher — a passionate web developer specializing in modern
-          JavaScript frameworks and backend systems. I build intuitive,
-          scalable, and AI-powered web solutions that help brands grow online.
-        </p>
-        <a href="#contact" class="bg-white text-gray-700
-      px-6 py-3 mb-6 rounded-full font-semibold hover:bg-gray-200 transition">
-          Let's Connect</a>
+    <nav
+      class="flex justify-between items-center bg-gradient-to-r from-purple-600 to-sky-300 shadow-sm px-8 py-4 fixed w-full top-0 z-10"
+    >
+      <!-- brand name -->
+      <div class="flex items-center gap-3">
+        <img
+          src="..//images/logo.png"
+          class="w-10 h-10 rounded-full"
+          alt="logo"
+        />
+        <span class="text-xl font-bold text-white">Taher Developer</span>
       </div>
 
-    </div>
-  </section>
+      <!-- menu links -->
+      <div class="font-bold spcace-x-6 hidden md:flex gap-3">
+        <a href="#" class="hover:text-indigo-600">Home</a>
+        <a href="#about" class="hover:text-indigo-600">About</a>
+        <a href="#portfolio" class="hover:text-indigo-600">Portfolio</a>
+        <a href="#services" class="hover:text-indigo-600">Services</a>
+        <a href="#contact" class="hover:text-indigo-600">Contact</a>
+      </div>
 
-  <!-- End of About Section -->
+      <!-- buttons -->
+      <div class="spcace-x-3">
+        <button
+          class="px-4 py-2 text-gray-700 border border-indigo-600 bg-white rounded-full hover:bg-indigo-700 hover:text-white transition"
+        >
+          Login
+        </button>
 
-  <!-- Portfolio section -->
+        <button
+          class="px-4 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition"
+        >
+          Signup
+        </button>
+      </div>
+    </nav>
 
-  <section class="py-20 bg-gray-100 px-6 md:px-16 text-center">
-    <h2 class="text-3xl font-bold text-indigo-700 mb-4">My Portfolio</h2>
-    <p class="text-gray-600 mb-10">Some of my recent projects and designs</p>
+    <!-- hero section -->
 
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto text-gray-700">
-      <div class="bg-white shadow rounded-lg overflow-hidden hover:scale-105  transition-transform">
-        <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg" alt="Project 1"
-          class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="font-semibold text-lg mb-2">E-commerce Website</h3>
-          <p class="text-gray-600 text-sm">
-            Modern shopping experience built with React & Tailwind.
+    <section
+      class="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-stone-600 to-stone-400 text-teal-300 text-center px-6"
+    >
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">
+        Welcome to My Creative world🌍
+      </h1>
+      <p class="max-w-2xl mb-6 text-lg opacity-90">
+        Your gateway to web development excellence.
+      </p>
+      <a
+        href="#portfolio"
+        class="bg-white text-gray-700 px-6 py-3 mb-6 rounded-full font-semibold hover:bg-gray-200 transition"
+      >
+        View My Work
+      </a>
+    </section>
+
+    <!-- End of Hero Section -->
+
+    <!-- About Section -->
+
+    <section class="py-20 bg-sky-200 px-6 md:px-16" id="about">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        <img
+          src="..//images/logo.png"
+          alt="logo"
+          class="rounded-2xl max-h-40 shadow-lg w-auto mx-auto hover:scale-105 transition-transform"
+        />
+        <div>
+          <h2 class="text-3xl font-bold mb-4 text-indigo-700">About Me</h2>
+          <p class="text-gray-600 mb-6 leading-relaxed">
+            Hi, I’m Taher — a passionate web developer specializing in modern
+            JavaScript frameworks and backend systems. I build intuitive,
+            scalable, and AI-powered web solutions that help brands grow online.
+          </p>
+          <a
+            href="#contact"
+            class="bg-white text-gray-700 px-6 py-3 mb-6 rounded-full font-semibold hover:bg-gray-200 transition"
+          >
+            Let's Connect</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- End of About Section -->
+
+    <!-- Portfolio section -->
+
+    <section class="py-20 bg-gray-100 px-6 md:px-16 text-center">
+      <h2 class="text-3xl font-bold text-indigo-700 mb-4">My Portfolio</h2>
+      <p class="text-gray-600 mb-10">Some of my recent projects and designs</p>
+
+      <div
+        class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto text-gray-700"
+      >
+        <div
+          class="bg-white shadow rounded-lg overflow-hidden hover:scale-105 transition-transform"
+        >
+          <img
+            src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg"
+            alt="Project 1"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-lg mb-2">E-commerce Website</h3>
+            <p class="text-gray-600 text-sm">
+              Modern shopping experience built with React & Tailwind.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-white shadow rounded-lg overflow-hidden hover:scale-105 transition-transform"
+        >
+          <img
+            src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg"
+            alt="Project 2"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-lg mb-2">AI Resume Builder</h3>
+            <p class="text-gray-600 text-sm">
+              AI-powered tool to create professional resumes quickly.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="bg-white shadow rounded-lg overflow-hidden hover:scale-105 transition-transform"
+        >
+          <img
+            src="https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg"
+            alt="Project 3"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-lg mb-2">Portfolio website</h3>
+            <p class="text-gray-600 text-sm">
+              Personal brand portfolio built with Next.JS.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End of Portfolio section -->
+
+    <!-- Services Section -->
+
+    <section class="py-20 bg-sky-200 px-6 md:px-16 text-center">
+      <h2 class="text-3xl font-bold text-indigo-700 mb-4">Services</h2>
+      <p class="text-gray-600 mb-10">
+        What I can help you with - from concept to deployment
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto text-gray-700">
+        <div
+          class="p-8 bg-gray-100 rounded-xl shadow hover:shadow-md transition"
+        >
+          <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+          <p class="text-gray-600">Building responsive and modern websites.</p>
+        </div>
+        <div
+          class="p-8 bg-gray-100 rounded-xl shadow hover:shadow-md transition"
+        >
+          <h3 class="text-xl font-semibold mb-2">SEO Optimization</h3>
+          <p class="text-gray-600">
+            Improving your website's visibility on search engines.
+          </p>
+        </div>
+        <div
+          class="p-8 bg-gray-100 rounded-xl shadow hover:shadow-md transition"
+        >
+          <h3 class="text-xl font-semibold mb-2">Content Creation</h3>
+          <p class="text-gray-600">
+            Crafting engaging content for your audience.
           </p>
         </div>
       </div>
+    </section>
 
-      <div class="bg-white shadow rounded-lg overflow-hidden hover:scale-105 transition-transform">
-        <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg" alt="Project 2"
-          class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="font-semibold text-lg mb-2">AI Resume Builder</h3>
-          <p class="text-gray-600 text-sm">AI-powered tool to create professional resumes quickly.</p>
+    <!-- End Of Services section  -->
+
+    <!-- Testimonial section -->
+
+    <section
+      class="py-20 bg-gradient-to-r from-indigo-400 via-purple-300 to-pink-300 px-6 md:px-16 text-center"
+    >
+      <h2 class="text-3xl font-bold text-indigo-700 mb-4">Testimonials</h2>
+      <p class="text-gray-600 mb-10">
+        What my clients say about working with me
+      </p>
+
+      <div class="max-w-4xl mx-auto space-y-8">
+        <div
+          class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition-all"
+        >
+          <p class="text-gray-600 italic mb-4">
+            "Taher delivered an exceptional website that exceeded our
+            expectations. Highly recommend!"
+          </p>
+          <span class="font-semibold text-indigo-600"
+            >- Sarah L., CEO of TechCorp</span
+          >
+        </div>
+        <div
+          class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition-all"
+        >
+          <p class="text-gray-600 italic mb-4">
+            "Professional, timely, and skilled. Taher transformed our online
+            presence."
+          </p>
+          <span class="font-semibold text-indigo-600"
+            >- Mark D., Founder of StartupX</span
+          >
+        </div>
+        <div
+          class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition-all"
+        >
+          <p class="text-gray-600 italic mb-4">
+            "Working with Taher was a pleasure. The SEO improvements boosted our
+            traffic significantly."
+          </p>
+          <span class="font-semibold text-indigo-600"
+            >- Emily R., Marketing Manager at BizSolutions</span
+          >
         </div>
       </div>
+    </section>
 
-      <div class="bg-white shadow rounded-lg overflow-hidden hover:scale-105 transition-transform">
-        <img src="https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg" alt="Project 3"
-          class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="font-semibold text-lg mb-2">Portfolio website</h3>
-          <p class="text-gray-600 text-sm">Personal brand portfolio built with Next.JS.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- End of Testimonial section -->
 
-  <!-- End of Portfolio section -->
+    <!-- Contact Section -->
 
-  <!-- Services Section -->
+    <section
+      class="py-20 bg-sky-200 text-white px-6 md:px-16 text-center"
+      id="contact"
+    >
+      <h2 class="text-3xl font-bold text-indigo-700 mb-4">
+        Let's Get in Touch
+      </h2>
+      <p class="mb-8 max-w-2xl text-gray-600 mx-auto opacity-90">
+        Have a project in mind or just want to say hello? Reach out!
+      </p>
+      <a
+        href="mailto:taherdeveloper@g,ail.com"
+        class="bg-white text-gray-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition"
+        >Contact Me</a
+      >
+    </section>
 
-  <section class="py-20 bg-sky-200 px-6 md:px-16 text-center">
-    <h2 class="text-3xl font-bold text-indigo-700 mb-4">Services</h2>
-    <p class="text-gray-600 mb-10">What I can help you with - from concept to deployment</p>
+    <!-- Footer Section -->
 
-    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto text-gray-700">
-      <div class="p-8 bg-gray-100 rounded-xl shadow hover:shadow-md transition">
-        <h3 class="text-xl font-semibold mb-2">Web Development</h3>
-        <p class="text-gray-600">Building responsive and modern websites.</p>
-      </div>
-      <div class="p-8 bg-gray-100 rounded-xl shadow hover:shadow-md transition">
-        <h3 class="text-xl font-semibold mb-2">SEO Optimization</h3>
-        <p class="text-gray-600">Improving your website's visibility on search engines.</p>
-      </div>
-      <div class="p-8 bg-gray-100 rounded-xl shadow hover:shadow-md transition">
-        <h3 class="text-xl font-semibold mb-2">Content Creation</h3>
-        <p class="text-gray-600">Crafting engaging content for your audience.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- End Of Services section  -->
-
-  <!-- Testimonial section -->
-
-  <section class="py-20 bg-gradient-to-r from-indigo-400 via-purple-300 to-pink-300 px-6 md:px-16 text-center">
-
-    <h2 class="text-3xl font-bold text-indigo-700 mb-4">Testimonials</h2>
-    <p class="text-gray-600 mb-10">What my clients say about working with me</p>
-
-    <div class="max-w-4xl mx-auto space-y-8">
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition-all">
-        <p class="text-gray-600 italic mb-4">
-          "Taher delivered an exceptional website that exceeded our expectations.
-          Highly recommend!"</p>
-        <span class="font-semibold text-indigo-600">- Sarah L., CEO of TechCorp</span>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition-all">
-        <p class="text-gray-600 italic mb-4">
-          "Professional, timely, and skilled. Taher transformed our online presence."
-        </p>
-        <span class="font-semibold text-indigo-600">- Mark D., Founder of StartupX</span>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition-all">
-        <p class="text-gray-600 italic mb-4">
-          "Working with Taher was a pleasure. The SEO improvements boosted our
-          traffic significantly."</p>
-        <span class="font-semibold text-indigo-600">- Emily R., Marketing Manager at BizSolutions</span>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- End of Testimonial section -->
-
-  <!-- Contact Section -->
-
-  <section class="py-20 bg-sky-200 text-white px-6 md:px-16 text-center" id="contact">
-    <h2 class="text-3xl font-bold text-indigo-700 mb-4">Let's Get in Touch</h2>
-    <p class="mb-8 max-w-2xl text-gray-600 mx-auto opacity-90">Have a project in mind or just want to say hello? Reach out!</p>
-    <a href="mailto:taherdeveloper@g,ail.com"
-      class="bg-white text-gray-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition ">Contact Me</a>
-  </section>
-
-
-  <!-- Footer Section -->
-
-  <footer class="bg-gray-700  text-white py-10">
-    
+    <footer class="bg-gray-700 text-white py-10">
       <div class="flex items-center justify-center gap-3 mb-4">
-        <img src="..//images/logo.png" class="w-10 h-10 rounded-full" alt="">
+        <img src="..//images/logo.png" class="w-10 h-10 rounded-full" alt="" />
         <span class="text-3xl font-bold">Taher Developer</span>
       </div>
       <div class="flex justify-center gap-6 mb-4">
@@ -206,12 +275,11 @@
         <a href="#services">Services</a>
         <a href="#">Privacy Policy</a>
       </div>
-      <p class="text-center">&copy; 2025 Taher Developer. All rights reserved.</p>
-    
-  </footer>
+      <p class="text-center">
+        &copy; 2025 Taher Developer. All rights reserved.
+      </p>
+    </footer>
 
-  <!-- End Footer section -->
-
-</body>
-
+    <!-- End Footer section -->
+  </body>
 </html>
