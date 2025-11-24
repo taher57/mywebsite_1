@@ -4,52 +4,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Taher | Home page</title>
-  <link rel="stylesheet" href="../css/webstyle.css">
+  <title>Taher Developer | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gray-50 text-gray-700 font-sans">
   <!-- navbar  -->
 
-  <nav class="navbar">
+  <nav class="flex justify-between items-center bg-slate-300 shadow-sm px-8 py-4 fixed w-full top-0 z-10">
     <!-- brand name -->
-    <div class="brand">
-      <img src="..//images/logo.png" class="brand_logo" alt="">
-      <span class="brand_name">Taher Developer</span>
+    <div class="flex items-center gap-3">
+      <img src="..//images/logo.png" class="w-10 h-10 rounded-full" alt="logo">
+      <span class="text-xl font-bold text-maroon-600">Taher Developer</span>
     </div>
 
-    <!-- space -->
-
-    <div class="main_right_link">
-
-      <!-- menu links -->
-      <div class="links">
-        <a href="index.html">Home</a>
-        <a href="service.html">Services</a>
-        <a href="about.html">About</a>
-        <a href="Contact.html">Contact</a>
-      </div>
-
-      <!-- buttons -->
-      <div>
-        <button class="button">Login</button>
-        <button class="button">SignUp</button>
-      </div>
+    <!-- menu links -->
+    <div class="spcace-x-6 hidden md:flex gap-3">
+      <a href="#" class="hover:text-indigo-600">Home</a>
+      <a href="#about" class="hover:text-indigo-600">About</a>
+      <a href="#portfolio" class="hover:text-indigo-600">Portfolio</a>
+      <a href="#services" class="hover:text-indigo-600">Services</a>
+      <a href="#contact" class="hover:text-indigo-600">Contact</a>
     </div>
+
+    <!-- buttons -->
+    <div class="spcace-x-3">
+      <button
+        class="px-4 py-2 border border-indigo-600 bg-white rounded-full hover:bg-indigo-700 hover:text-white transition">
+        Login
+      </button>
+
+      <button class="px-4 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition">Signup
+      </button>
+    </div>
+
   </nav>
 
   <!-- hero section -->
 
-  <section class="hero_section">
-    <div class="hero_content">
-      <h1>Welcome to Taher Developer</h1>
-      <p>Your gateway to web development excellence.</p>
-      <a href="service.html" class="hero_button button">Explore Our Services</a>
-    </div>
+  <section
+    class="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-stone-700 to-stone-400 text-white text-center px-6">
+
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">
+      Welcome to My Creative world🌍
+    </h1>
+    <p class="max-w-2xl mb-6 text-lg opacity-90">
+      Your gateway to web development excellence.
+    </p>
+    <a href="#portfolio" class="bg-white text-gray-700
+      px-6 py-3 mb-6 rounded-full font-semibold hover:bg-gray-200 transition">
+      View My Work
+    </a>
+
   </section>
 
   <!-- End of Hero Section -->
 
+  <!-- About Section -->
+
+  <section>
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+
+      <img src="..//images/logo.png" alt="logo" class="rounded-2xl max-h-40 shadow-lg w-auto mx-auto">
+      <div>
+        <h2 class="text-3xl font-bold mb-4 text-gray-700">
+          About Me
+        </h2>
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          Hi, I’m Taher — a passionate web developer specializing in modern
+          JavaScript frameworks and backend systems. I build intuitive,
+          scalable, and AI-powered web solutions that help brands grow online.
+        </p>
+        <a href="#contact" class="bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-700 transition ">Let's
+          Connect</a>
+      </div>
+      
+    </div>
+  </section>
 
   <!-- Services Section -->
 
@@ -127,7 +158,7 @@
   <!-- End Experience section -->
 
   <!-- Contact Section -->
-   
+
   <section class="contact_section">
     <h2>Contact Us</h2>
     <form class="contact_form" action="#" method="POST">
