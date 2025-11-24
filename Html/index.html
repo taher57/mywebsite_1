@@ -11,7 +11,7 @@
 <body class="bg-gray-50 text-gray-700 font-sans">
   <!-- navbar  -->
 
-  <nav class="flex justify-between items-center bg-slate-300 shadow-sm px-8 py-4 fixed w-full top-0 z-10">
+  <nav class="flex justify-between items-center bg-gradient-to-r from-teal-600 via-green-300 to-teal-600 shadow-sm px-8 py-4 fixed w-full top-0 z-10">
     <!-- brand name -->
     <div class="flex items-center gap-3">
       <img src="..//images/logo.png" class="w-10 h-10 rounded-full" alt="logo">
@@ -19,7 +19,7 @@
     </div>
 
     <!-- menu links -->
-    <div class="spcace-x-6 hidden md:flex gap-3">
+    <div class="font-bold spcace-x-6 hidden md:flex gap-3">
       <a href="#" class="hover:text-indigo-600">Home</a>
       <a href="#about" class="hover:text-indigo-600">About</a>
       <a href="#portfolio" class="hover:text-indigo-600">Portfolio</a>
@@ -43,7 +43,7 @@
   <!-- hero section -->
 
   <section
-    class="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-stone-700 to-stone-400 text-white text-center px-6">
+    class="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-stone-600 to-stone-300 text-white text-center px-6">
 
     <h1 class="text-4xl md:text-6xl font-bold mb-4">
       Welcome to My Creative world🌍
@@ -62,12 +62,13 @@
 
   <!-- About Section -->
 
-  <section>
+  <section class="py-20 bg-cyan-300 px-6 md:px-16" id="about">
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
 
-      <img src="..//images/logo.png" alt="logo" class="rounded-2xl max-h-40 shadow-lg w-auto mx-auto">
+      <img src="..//images/logo.png" alt="logo"
+        class="rounded-2xl max-h-40 shadow-lg w-auto mx-auto hover:scale-105 transition-transform">
       <div>
-        <h2 class="text-3xl font-bold mb-4 text-gray-700">
+        <h2 class="text-3xl font-bold mb-4 text-indigo-700">
           About Me
         </h2>
         <p class="text-gray-600 mb-6 leading-relaxed">
@@ -75,124 +76,138 @@
           JavaScript frameworks and backend systems. I build intuitive,
           scalable, and AI-powered web solutions that help brands grow online.
         </p>
-        <a href="#contact" class="bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-700 transition ">Let's
-          Connect</a>
+        <a href="#contact" class="bg-white text-gray-700
+      px-6 py-3 mb-6 rounded-full font-semibold hover:bg-gray-200 transition">
+          Let's Connect</a>
       </div>
-      
+
     </div>
   </section>
 
+  <!-- End of About Section -->
+
+  <!-- Portfolio section -->
+
+  <section class="py-20 bg-gray-100 px-6 md:px-16 text-center">
+    <h2 class="text-3xl font-bold text-indigo-700 mb-4">My Portfolio</h2>
+    <p class="text-gray-600 mb-10">Some of my recent projects and designs</p>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div class="bg-white shadow rounded-lg overflow-hidden hover:scale-105  transition-transform">
+        <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg" alt="Project 1"
+          class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold text-lg mb-2">E-commerce Website</h3>
+          <p class="text-gray-600 text-sm">
+            Modern shopping experience built with React & Tailwind.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white shadow rounded-lg overflow-hidden hover:scale-105 transition-transform">
+        <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg" alt="Project 2"
+          class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold text-lg mb-2">AI Resume Builder</h3>
+          <p class="text-gray-600 text-sm">AI-powered tool to create professional resumes quickly.</p>
+        </div>
+      </div>
+
+      <div class="bg-white shadow rounded-lg overflow-hidden hover:scale-105 transition-transform">
+        <img src="https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg" alt="Project 3"
+          class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-semibold text-lg mb-2">Portfolio website</h3>
+          <p class="text-gray-600 text-sm">Personal brand portfolio built with Next.JS.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End of Portfolio section -->
+
   <!-- Services Section -->
 
-  <section class="services_section">
-    <h2>Our Services</h2>
-    <p>We are best in Web Development, SEO and Content Creation...</p>
-    <div class="services_container">
-      <div class="service_item">
-        <h3>Web Development</h3>
-        <p>Building responsive and modern websites.</p>
+  <section class="py-20 bg-sky-100 px-6 md:px-16 text-center">
+    <h2 class="text-3xl font-bold text-indigo-700 mb-4">Services</h2>
+    <p class="text-gray-600 mb-10">What I can help you with - from concept to deployment</p>
+
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="p-8 bg-gray-100 rounded-xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+        <p class="text-gray-600">Building responsive and modern websites.</p>
       </div>
-      <div class="service_item">
-        <h3>SEO Optimization</h3>
-        <p>Improving your website's visibility on search engines.</p>
+      <div class="p-8 bg-gray-100 rounded-xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold mb-2">SEO Optimization</h3>
+        <p class="text-gray-600">Improving your website's visibility on search engines.</p>
       </div>
-      <div class="service_item">
-        <h3>Content Creation</h3>
-        <p>Crafting engaging content for your audience.</p>
+      <div class="p-8 bg-gray-100 rounded-xl shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold mb-2">Content Creation</h3>
+        <p class="text-gray-600">Crafting engaging content for your audience.</p>
       </div>
     </div>
   </section>
 
   <!-- End Of Services section  -->
 
-  <!-- Experience Section -->
+  <!-- Testimonial section -->
 
-  <section class="experience_section">
-    <h2>Experience</h2>
-    <p>Results-oriented Software Engineer with 4+ years of hands-on experience in product development within agile
-      environments. Proficient in designing, developing, and deploying scalable, high-performance software solutions.
-      Adept at collaborating with cross-functional teams to create user-friendly web applications and resolve technical
-      challenges efficiently.</p>
-    <div class="experience_container">
+  <section class="py-20 bg-gradient-to-r from-indigo-400 via-purple-300 to-pink-300 px-6 md:px-16 text-center">
 
-      <div class="experience_item">
-        <h3>Web Developer</h3>
-        <span class="experience_company">Freelance | August 2023 - Present</span>
-        <ul>
-          <li>Designed and deployed high-performance websites using HTML, CSS, JavaScript, and React.js.</li>
-          <li>Worked with clients from various industries, delivering custom solutions for business needs.</li>
-          <li>Optimized codebase for speed and SEO best practices.</li>
-          <li>Provided support in web application development, bug fi xing, and feature enhancement.</li>
-          <li>Leveraged Java, HTML, CSS, JS and cloud services (AWS/Azure), MERN Stack to address diverse project needs.
-          </li>
-        </ul>
+    <h2 class="text-3xl font-bold text-indigo-700 mb-4">Testimonials</h2>
+    <p class="text-gray-600 mb-10">What my clients say about working with me</p>
+
+    <div class="max-w-4xl mx-auto space-y-8">
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition-all">
+        <p class="text-gray-600 italic mb-4">
+          "Taher delivered an exceptional website that exceeded our expectations.
+          Highly recommend!"</p>
+        <span class="font-semibold text-indigo-600">- Sarah L., CEO of TechCorp</span>
       </div>
-
-      <div class="experience_item">
-        <h3>Software Engineer</h3>
-        <span class="experience_company">Prodapt Solutions Pvt. Ltd., Bangalore, India | August 2022 - July 2023</span>
-        <ul>
-          <li>Developed RESTful APIs using Spring Boot and integrated with Spring Data JPA.</li>
-          <li>Collaborated with cross-functional teams to deliver scalable enterprise applications.</li>
-          <li>Performed unit testing and code reviews for quality assurance.</li>
-          <li>Conducted code reviews, implemented best coding practices, and maintained high code quality.</li>
-          <li>Participated in the agile development process, regularly delivering deliverables within deadlines.</li>
-        </ul>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition-all">
+        <p class="text-gray-600 italic mb-4">
+          "Professional, timely, and skilled. Taher transformed our online presence."
+        </p>
+        <span class="font-semibold text-indigo-600">- Mark D., Founder of StartupX</span>
       </div>
-
-      <div class="experience_item">
-        <h3>Java/J2ee Developer</h3>
-        <span class="experience_company">Cybergy Infotech| April 2021 - July 2022</span>
-        <ul>
-          <li>Developed web-based applications using Java and J2ee technologies.</li>
-          <li>Utilized Agile methodology for project management.</li>
-          <li>Conducted unit testing and resolved technical issues</li>
-          <li>Worked on backend development using SQL and Oracle databases.</li>
-          <li>Collaborated with cross-functional teams to design solutions.</li>
-        </ul>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition-all">
+        <p class="text-gray-600 italic mb-4">
+          "Working with Taher was a pleasure. The SEO improvements boosted our
+          traffic significantly."</p>
+        <span class="font-semibold text-indigo-600">- Emily R., Marketing Manager at BizSolutions</span>
       </div>
-
     </div>
+
   </section>
 
-  <!-- End Experience section -->
+  <!-- End of Testimonial section -->
 
   <!-- Contact Section -->
 
-  <section class="contact_section">
-    <h2>Contact Us</h2>
-    <form class="contact_form" action="#" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <input type="text" name="subject" placeholder="Subject" required />
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit" class="button">Send Message</button>
-    </form>
+  <section class="py-20 bg-cyan-300 text-white px-6 md:px-16 text-center" id="contact">
+    <h2 class="text-3xl font-bold text-indigo-700 mb-4">Let's Get in Touch</h2>
+    <p class="mb-8 max-w-2xl mx-auto opacity-90">Have a project in mind or just want to say hello? Reach out!</p>
+    <a href="mailto:taherdeveloper@g,ail.com"
+      class="bg-white text-gray-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition ">Contact Me</a>
   </section>
 
 
   <!-- Footer Section -->
 
-  <footer class="footer_section">
-    <div class="footer_content">
-      <div class="footer_brand">
-        <img src="..//images/logo.png" class="brand_logo" alt="">
-        <span class="brand_name">Taher Developer</span>
+  <footer class="bg-gray-700  text-white py-10">
+    
+      <div class="flex items-center justify-center gap-3 mb-4">
+        <img src="..//images/logo.png" class="w-10 h-10 rounded-full" alt="">
+        <span class="text-3xl font-bold">Taher Developer</span>
       </div>
-      <div class="footer_links">
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="service.html">Services</a>
+      <div class="flex justify-center gap-6 mb-4">
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#services">Services</a>
         <a href="#">Privacy Policy</a>
       </div>
-      <div class="footer_social">
-        <a href="https://github.com/" target="_blank" title="GitHub"><img src="../images/github-icon.png"
-            alt="GitHub" /></a>
-        <a href="https://linkedin.com/" target="_blank" title="LinkedIn"><img src="../images/linkedin-icon.png"
-            alt="LinkedIn" /></a>
-      </div>
-      <p class="footer_copyright">&copy; 2025 Taher Developer. All rights reserved.</p>
-    </div>
+      <p class="text-center">&copy; 2025 Taher Developer. All rights reserved.</p>
+    
   </footer>
 
   <!-- End Footer section -->
