@@ -74,9 +74,9 @@
 
     <!-- Page Heading -->
     <section
-      class="bg-white border-b border-zinc-200 h-40 flex items-center justify-center"
+      class="bg-white border-b border-zinc-200 h-40 flex items-center"
     >
-      <div class="ml-20">
+      <div class="ml-25">
         <h1 class="text-2xl font-semibold">Explore Our Collection</h1>
         <p class="mt-1 text-sm text-zinc-600">
           Handpicked apparels and accessories for you. Free returns and easy
@@ -86,43 +86,45 @@
     </section>
 
     <!-- Main content page -->
-    <main class="max-w-7xl mx-auto mt-5">
-      <div class="flex justify-between mx-10">
-        <h2 class="text-zinc-800">Filters</h2>
-        <p class="text-blue-500 text-sm">Clear all</p>
+    <main class="w-[calc(100%-100px)] mx-auto mt-5 grid grid-cols-1 md:grid-cols-[280px_minmax(0,1fr)]">
+      <!-- left -->
+      <div class="flex justify-between mx-10 mt-3">
+          <h2 class="text-zinc-800">Filters</h2>
+          <p class="text-blue-500 text-sm">Clear all</p>
       </div>
 
       <!-- right -->
-      <!-- product grid -->
+      <div>
+        <!-- product grid -->
+        <!-- Banner -->
+        <div class="products grids">
+          <div
+            class="mb-4 mt-3 rounded-2xl border border-zinc-200 flex flex-col md:flex-row items-center gap-4 bg-gradient-to-br from-blue-200 to-white"
+          >
+            <img
+              src="https://cdn.pixabay.com/photo/2020/12/16/04/16/girl-5835667_1280.jpg"
+              class="w-24 h-24 object-cover rounded-xl"
+              alt="product1"
+            />
 
-      <div class="products grids">
-        <div
-          class="mb-4 mt-3 rounded-2xl border border-zinc-200 flex flex-col md:flex-row items-center gap-4 bg-gradient-to-br from-blue-200 to-white"
-        >
-          <img
-            src="https://cdn.pixabay.com/photo/2020/12/16/04/16/girl-5835667_1280.jpg"
-            class="w-24 h-24 object-cover rounded-xl"
-            alt="product1"
-          />
+            <div class="flex-1">
+              <h3 class="text-lg font-semibold">New Arrivals: Minimal Tees</h3>
+              <p class="text-sm text-zinc-600">
+                Soft cotton, clean fits, 12 colors. Intro offer live.
+              </p>
+              <p class="text-lg font-semibold">₹1000</p>
+            </div>
 
-          <div class="flex-1">
-            <h3 class="text-lg font-semibold">New Arrivals: Minimal Tees</h3>
-            <p class="text-sm text-zinc-600">
-              Soft cotton, clean fits, 12 colors. Intro offer live.
-            </p>
-            <p class="text-lg font-semibold">₹1000</p>
+            <a
+              href="#"
+              class="bg-indigo-600 text-white px-4 py-2 rounded-xl mx-4 text-sm font-medium shadow hover:bg-indigo-700"
+            >
+              Buy Now</a
+            >
           </div>
-
-          <a
-            href="#"
-            class="bg-indigo-600 text-white px-4 py-2 rounded-xl mx-4 text-sm font-medium shadow hover:bg-indigo-700"
-          >
-            Buy Now</a
-          >
         </div>
-      </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 mt-10">
+        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 mt-10">
           <!-- single card -->
           <div class="card">
             <article
@@ -240,6 +242,600 @@
               </div>
             </article>
           </div>
+
+          <!-- single card -->
+          <div class="card">
+            <article
+              class="group relative overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm hover:shadow-md transition-shadow animate-pop"
+            >
+              <div class="relative aspect-square overflow-hidden">
+                <img
+                  class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  src="https://cdn.pixabay.com/photo/2023/05/08/21/59/woman-7979848_1280.jpg"
+                  alt="Product image"
+                />
+                <span
+                  class="absolute left-2 top-2 rounded-full bg-indigo-600/90 px-2.5 py-1 text-[11px] font-semibold text-white"
+                  >New</span
+                >
+                <button
+                  class="absolute right-2 top-2 rounded-full bg-white/90 p-2 border border-zinc-200"
+                  aria-label="Wishlist"
+                >
+                  <svg
+                    class="h-4 w-4 text-zinc-700"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 22l7.8-8.6 1-1a5.5 5.5 0 0 0 0-7.8Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="p-3">
+                <h4 class="line-clamp-1 text-sm font-medium">
+                  Essential Tee - Blue
+                </h4>
+                <div
+                  class="mt-1 flex items-center gap-1 text-[11px] text-amber-500"
+                  aria-label="rating"
+                >
+                  <svg
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M10 1.5 12.6 7l5.4.4-4.2 3.4 1.4 5.2L10 13.9 4.8 16l1.4-5.2L2 7.4 7.4 7 10 1.5Z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M10 1.5 12.6 7l5.4.4-4.2 3.4 1.4 5.2L10 13.9 4.8 16l1.4-5.2L2 7.4 7.4 7 10 1.5Z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M10 1.5 12.6 7l5.4.4-4.2 3.4 1.4 5.2L10 13.9 4.8 16l1.4-5.2L2 7.4 7.4 7 10 1.5Z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M10 1.5 12.6 7l5.4.4-4.2 3.4 1.4 5.2L10 13.9 4.8 16l1.4-5.2L2 7.4 7.4 7 10 1.5Z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <defs>
+                      <linearGradient id="half">
+                        <stop offset="50%" />
+                        <stop offset="50%" stop-color="transparent" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="m12 .587 3.668 7.431 8.2 1.192-5.934 5.787 1.401 8.168L12 18.896 4.665 23.165l1.401-8.168L.132 9.21l8.2-1.192L12 .587z"
+                      fill="url(#half)"
+                    />
+                  </svg>
+                  4.5
+                </div>
+                <div class="mt-2 flex items-baseline gap-2">
+                  <span class="text-base font-semibold">₹699</span>
+                  <span class="text-xs text-zinc-500 line-through">₹999</span>
+                  <span
+                    class="ml-auto text-[11px] rounded-full bg-emerald-50 text-emerald-700 px-2 py-0.5 font-semibold"
+                    >30% off</span
+                  >
+                </div>
+                <div class="mt-3 flex gap-2">
+                  <button
+                    class="flex-1 rounded-xl border border-zinc-300 px-3 py-2 text-sm hover:bg-zinc-50"
+                  >
+                    Add to cart
+                  </button>
+                  <button
+                    class="rounded-xl bg-zinc-900 px-3 py-2 text-sm font-medium text-white hover:bg-black"
+                  >
+                    Buy
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- single card -->
+          <div class="card">
+            <article
+              class="group relative overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm hover:shadow-md transition-shadow animate-pop"
+            >
+              <div class="relative aspect-square overflow-hidden">
+                <img
+                  class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  src="https://cdn.pixabay.com/photo/2023/05/08/21/59/woman-7979848_1280.jpg"
+                  alt="Product image"
+                />
+                <span
+                  class="absolute left-2 top-2 rounded-full bg-indigo-600/90 px-2.5 py-1 text-[11px] font-semibold text-white"
+                  >New</span
+                >
+                <button
+                  class="absolute right-2 top-2 rounded-full bg-white/90 p-2 border border-zinc-200"
+                  aria-label="Wishlist"
+                >
+                  <svg
+                    class="h-4 w-4 text-zinc-700"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 22l7.8-8.6 1-1a5.5 5.5 0 0 0 0-7.8Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="p-3">
+                <h4 class="line-clamp-1 text-sm font-medium">
+                  Essential Tee - Blue
+                </h4>
+                <div
+                  class="mt-1 flex items-center gap-1 text-[11px] text-amber-500"
+                  aria-label="rating"
+                >
+                  <svg
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M10 1.5 12.6 7l5.4.4-4.2 3.4 1.4 5.2L10 13.9 4.8 16l1.4-5.2L2 7.4 7.4 7 10 1.5Z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M10 1.5 12.6 7l5.4.4-4.2 3.4 1.4 5.2L10 13.9 4.8 16l1.4-5.2L2 7.4 7.4 7 10 1.5Z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M10 1.5 12.6 7l5.4.4-4.2 3.4 1.4 5.2L10 13.9 4.8 16l1.4-5.2L2 7.4 7.4 7 10 1.5Z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M10 1.5 12.6 7l5.4.4-4.2 3.4 1.4 5.2L10 13.9 4.8 16l1.4-5.2L2 7.4 7.4 7 10 1.5Z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <defs>
+                      <linearGradient id="half">
+                        <stop offset="50%" />
+                        <stop offset="50%" stop-color="transparent" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="m12 .587 3.668 7.431 8.2 1.192-5.934 5.787 1.401 8.168L12 18.896 4.665 23.165l1.401-8.168L.132 9.21l8.2-1.192L12 .587z"
+                      fill="url(#half)"
+                    />
+                  </svg>
+                  4.5
+                </div>
+                <div class="mt-2 flex items-baseline gap-2">
+                  <span class="text-base font-semibold">₹699</span>
+                  <span class="text-xs text-zinc-500 line-through">₹999</span>
+                  <span
+                    class="ml-auto text-[11px] rounded-full bg-emerald-50 text-emerald-700 px-2 py-0.5 font-semibold"
+                    >30% off</span
+                  >
+                </div>
+                <div class="mt-3 flex gap-2">
+                  <button
+                    class="flex-1 rounded-xl border border-zinc-300 px-3 py-2 text-sm hover:bg-zinc-50"
+                  >
+                    Add to cart
+                  </button>
+                  <button
+                    class="rounded-xl bg-zinc-900 px-3 py-2 text-sm font-medium text-white hover:bg-black"
+                  >
+                    Buy
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- single card -->
+          <div class="card">
+            <article
+              class="group relative overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm hover:shadow-md transition-shadow animate-pop"
+            >
+              <div class="relative aspect-square overflow-hidden">
+                <img
+                  class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  src="https://cdn.pixabay.com/photo/2023/05/08/21/59/woman-7979848_1280.jpg"
+                  alt="Product image"
+                />
+                <span
+                  class="absolute left-2 top-2 rounded-full bg-indigo-600/90 px-2.5 py-1 text-[11px] font-semibold text-white"
+                  >New</span
+                >
+                <button
+                  class="absolute right-2 top-2 rounded-full bg-white/90 p-2 border border-zinc-200"
+                  aria-label="Wishlist"
+                >
+                  <svg
+                    class="h-4 w-4 text-zinc-700"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 22l7.8-8.6 1-1a5.5 5.5 0 0 0 0-7.8Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="p-3">
+                <h4 class="line-clamp-1 text-sm font-medium">
+                  Essential Tee - Blue
+                </h4>
+                <div
+                  class="mt-1 flex items-center gap-1 text-[11px] text-amber-500"
+                  aria-label="rating"
+                >
+                  <svg
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M10 1.5 12.6 7l5.4.4-4.2 3.4 1.4 5.2L10 13.9 4.8 16l1.4-5.2L2 7.4 7.4 7 10 1.5Z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M10 1.5 12.6 7l5.4.4-4.2 3.4 1.4 5.2L10 13.9 4.8 16l1.4-5.2L2 7.4 7.4 7 10 1.5Z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M10 1.5 12.6 7l5.4.4-4.2 3.4 1.4 5.2L10 13.9 4.8 16l1.4-5.2L2 7.4 7.4 7 10 1.5Z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M10 1.5 12.6 7l5.4.4-4.2 3.4 1.4 5.2L10 13.9 4.8 16l1.4-5.2L2 7.4 7.4 7 10 1.5Z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <defs>
+                      <linearGradient id="half">
+                        <stop offset="50%" />
+                        <stop offset="50%" stop-color="transparent" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="m12 .587 3.668 7.431 8.2 1.192-5.934 5.787 1.401 8.168L12 18.896 4.665 23.165l1.401-8.168L.132 9.21l8.2-1.192L12 .587z"
+                      fill="url(#half)"
+                    />
+                  </svg>
+                  4.5
+                </div>
+                <div class="mt-2 flex items-baseline gap-2">
+                  <span class="text-base font-semibold">₹699</span>
+                  <span class="text-xs text-zinc-500 line-through">₹999</span>
+                  <span
+                    class="ml-auto text-[11px] rounded-full bg-emerald-50 text-emerald-700 px-2 py-0.5 font-semibold"
+                    >30% off</span
+                  >
+                </div>
+                <div class="mt-3 flex gap-2">
+                  <button
+                    class="flex-1 rounded-xl border border-zinc-300 px-3 py-2 text-sm hover:bg-zinc-50"
+                  >
+                    Add to cart
+                  </button>
+                  <button
+                    class="rounded-xl bg-zinc-900 px-3 py-2 text-sm font-medium text-white hover:bg-black"
+                  >
+                    Buy
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- single card -->
+          <div class="card">
+            <article
+              class="group relative overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm hover:shadow-md transition-shadow animate-pop"
+            >
+              <div class="relative aspect-square overflow-hidden">
+                <img
+                  class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  src="https://cdn.pixabay.com/photo/2023/05/08/21/59/woman-7979848_1280.jpg"
+                  alt="Product image"
+                />
+                <span
+                  class="absolute left-2 top-2 rounded-full bg-indigo-600/90 px-2.5 py-1 text-[11px] font-semibold text-white"
+                  >New</span
+                >
+                <button
+                  class="absolute right-2 top-2 rounded-full bg-white/90 p-2 border border-zinc-200"
+                  aria-label="Wishlist"
+                >
+                  <svg
+                    class="h-4 w-4 text-zinc-700"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 22l7.8-8.6 1-1a5.5 5.5 0 0 0 0-7.8Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="p-3">
+                <h4 class="line-clamp-1 text-sm font-medium">
+                  Essential Tee - Blue
+                </h4>
+                <div
+                  class="mt-1 flex items-center gap-1 text-[11px] text-amber-500"
+                  aria-label="rating"
+                >
+                  <svg
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M10 1.5 12.6 7l5.4.4-4.2 3.4 1.4 5.2L10 13.9 4.8 16l1.4-5.2L2 7.4 7.4 7 10 1.5Z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M10 1.5 12.6 7l5.4.4-4.2 3.4 1.4 5.2L10 13.9 4.8 16l1.4-5.2L2 7.4 7.4 7 10 1.5Z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M10 1.5 12.6 7l5.4.4-4.2 3.4 1.4 5.2L10 13.9 4.8 16l1.4-5.2L2 7.4 7.4 7 10 1.5Z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M10 1.5 12.6 7l5.4.4-4.2 3.4 1.4 5.2L10 13.9 4.8 16l1.4-5.2L2 7.4 7.4 7 10 1.5Z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <defs>
+                      <linearGradient id="half">
+                        <stop offset="50%" />
+                        <stop offset="50%" stop-color="transparent" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="m12 .587 3.668 7.431 8.2 1.192-5.934 5.787 1.401 8.168L12 18.896 4.665 23.165l1.401-8.168L.132 9.21l8.2-1.192L12 .587z"
+                      fill="url(#half)"
+                    />
+                  </svg>
+                  4.5
+                </div>
+                <div class="mt-2 flex items-baseline gap-2">
+                  <span class="text-base font-semibold">₹699</span>
+                  <span class="text-xs text-zinc-500 line-through">₹999</span>
+                  <span
+                    class="ml-auto text-[11px] rounded-full bg-emerald-50 text-emerald-700 px-2 py-0.5 font-semibold"
+                    >30% off</span
+                  >
+                </div>
+                <div class="mt-3 flex gap-2">
+                  <button
+                    class="flex-1 rounded-xl border border-zinc-300 px-3 py-2 text-sm hover:bg-zinc-50"
+                  >
+                    Add to cart
+                  </button>
+                  <button
+                    class="rounded-xl bg-zinc-900 px-3 py-2 text-sm font-medium text-white hover:bg-black"
+                  >
+                    Buy
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- single card -->
+          <div class="card">
+            <article
+              class="group relative overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm hover:shadow-md transition-shadow animate-pop"
+            >
+              <div class="relative aspect-square overflow-hidden">
+                <img
+                  class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  src="https://cdn.pixabay.com/photo/2023/05/08/21/59/woman-7979848_1280.jpg"
+                  alt="Product image"
+                />
+                <span
+                  class="absolute left-2 top-2 rounded-full bg-indigo-600/90 px-2.5 py-1 text-[11px] font-semibold text-white"
+                  >New</span
+                >
+                <button
+                  class="absolute right-2 top-2 rounded-full bg-white/90 p-2 border border-zinc-200"
+                  aria-label="Wishlist"
+                >
+                  <svg
+                    class="h-4 w-4 text-zinc-700"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 22l7.8-8.6 1-1a5.5 5.5 0 0 0 0-7.8Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="p-3">
+                <h4 class="line-clamp-1 text-sm font-medium">
+                  Essential Tee - Blue
+                </h4>
+                <div
+                  class="mt-1 flex items-center gap-1 text-[11px] text-amber-500"
+                  aria-label="rating"
+                >
+                  <svg
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M10 1.5 12.6 7l5.4.4-4.2 3.4 1.4 5.2L10 13.9 4.8 16l1.4-5.2L2 7.4 7.4 7 10 1.5Z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M10 1.5 12.6 7l5.4.4-4.2 3.4 1.4 5.2L10 13.9 4.8 16l1.4-5.2L2 7.4 7.4 7 10 1.5Z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M10 1.5 12.6 7l5.4.4-4.2 3.4 1.4 5.2L10 13.9 4.8 16l1.4-5.2L2 7.4 7.4 7 10 1.5Z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M10 1.5 12.6 7l5.4.4-4.2 3.4 1.4 5.2L10 13.9 4.8 16l1.4-5.2L2 7.4 7.4 7 10 1.5Z"
+                    />
+                  </svg>
+                  <svg
+                    class="h-3.5 w-3.5"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <defs>
+                      <linearGradient id="half">
+                        <stop offset="50%" />
+                        <stop offset="50%" stop-color="transparent" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="m12 .587 3.668 7.431 8.2 1.192-5.934 5.787 1.401 8.168L12 18.896 4.665 23.165l1.401-8.168L.132 9.21l8.2-1.192L12 .587z"
+                      fill="url(#half)"
+                    />
+                  </svg>
+                  4.5
+                </div>
+                <div class="mt-2 flex items-baseline gap-2">
+                  <span class="text-base font-semibold">₹699</span>
+                  <span class="text-xs text-zinc-500 line-through">₹999</span>
+                  <span
+                    class="ml-auto text-[11px] rounded-full bg-emerald-50 text-emerald-700 px-2 py-0.5 font-semibold"
+                    >30% off</span
+                  >
+                </div>
+                <div class="mt-3 flex gap-2">
+                  <button
+                    class="flex-1 rounded-xl border border-zinc-300 px-3 py-2 text-sm hover:bg-zinc-50"
+                  >
+                    Add to cart
+                  </button>
+                  <button
+                    class="rounded-xl bg-zinc-900 px-3 py-2 text-sm font-medium text-white hover:bg-black"
+                  >
+                    Buy
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </div>
+
     </main>
   </body>
 </html>
